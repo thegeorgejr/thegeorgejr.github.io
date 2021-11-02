@@ -718,8 +718,6 @@ footer {
     }
 
     #designation {
-      background-color: $font-color;
-      color: $background-color;
       position: relative;
 
       &::after {
@@ -730,7 +728,7 @@ footer {
 
         height: 80%;
         width: 3px;
-        background-color: $background-color;
+        background-color: $font-color;
         top: 50%;
         right: 0.4rem;
 
