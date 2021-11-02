@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
             document.querySelector("body").style.overflowY = "hidden"
           }
           else{
-            document.querySelector("body").style.overflowY = "scroll"
+            document.querySelector("body").style.overflowY = "auto"
           }
         }
     })
@@ -117,15 +117,4 @@ window.addEventListener('DOMContentLoaded', () => {
             data: formDataToJson(formData)
           }).then((response) => { console.log(response); })
     })
-
-    // contactForm.addEventListener("formdata", event => {
-    //     const data = event.formData;
-
-    //     const something = {
-    //         "_replyto": data.get("_replyto"),
-    //         "message": data.get("message")
-    //     }
-
-    //     console.log(something
-    //   });
 })
