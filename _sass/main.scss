@@ -255,8 +255,10 @@ body {
       box-sizing: border-box;
     }
 
-    .block-wrapper {
-      min-width: 450px;
+    @include for-tablet-portrait-up {
+      .block-wrapper {
+        min-width: 450px;
+      }
     }
 
     .img-wrapper {
