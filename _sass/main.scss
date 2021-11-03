@@ -711,12 +711,16 @@ footer {
 
     @include for-phone-only {
       font-size: 2rem;
-      max-width: 280px;
+      max-width: 90%;
     }
 
     @include for-tablet-portrait-up {
-      font-size: 3rem;
+      font-size: 2rem;
       max-width: 700px;
+    }
+
+    @include for-tablet-landscape-up {
+      font-size: 3rem;
     }
 
     #designation {
@@ -726,13 +730,27 @@ footer {
         content: "";
         position: absolute;
 
-        transform: translateY(-50%);
-
-        height: 80%;
         width: 3px;
         background-color: $font-color;
-        top: 50%;
-        right: 0.4rem;
+
+        @include for-phone-only {
+          transform: translateY(-50%);
+          height: 2rem;
+          bottom: -10px;
+        }
+
+        @include for-tablet-portrait-up {
+          transform: translateY(-50%);
+          height: 2rem;
+          bottom: -10px;
+        }
+
+        @include for-tablet-landscape-up {
+          bottom: unset;
+          height: 3rem;
+          top: 50%;
+          right: 0.4rem;
+        }
 
         animation: cursor 1.5s infinite;
 
