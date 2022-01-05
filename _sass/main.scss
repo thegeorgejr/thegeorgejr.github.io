@@ -90,6 +90,14 @@ body {
   }
 
   &.works {
+    .img-wrapper {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
     .heading {
       @include for-phone-only {
         font-size: 4rem;
